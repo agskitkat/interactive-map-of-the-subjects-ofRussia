@@ -1,4 +1,4 @@
-# map_of_russia_edition
+# Interactive map of the subjects of Russia
 Интерактивная карта субъектов РФ с Крымом - веб-приложение. 
 
 Возможности:
