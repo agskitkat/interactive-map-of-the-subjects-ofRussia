@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ru" ng-app="app">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	<!-- JS file -->
+	<script src="jquery.easy-autocomplete.min.js"></script> 
+	<!-- CSS file -->
+	<link rel="stylesheet" href="easy-autocomplete.css"> 
+	<script src="app.js?v=10"></script>
+	<style>
+		* {
+			transition: fill .4s ease;
+		}
+		body {
+			touch-action: auto;
+			margin:0px;
+			padding:0px;
+			font-family: 'Roboto', sans-serif;
+			
+		}
+		#svgmap {
+			width:100%;
+			height:100%;
+		}
+		
+		.mapwraper {
+			width:100vw;
+			height:100vh;
+			overflow:hidden;
+		}
+		.elements .btn {
+			display:block;
+			width:100px;
+			height:100px;
+			background:#FFF;
+			border-radius:50px;
+			color:#000;
+			text-align:center;
+			text-decoration:none;
+			font-size:80px;
+			line-height:100px;
+			float:left; 
+			margin:20px;
+			font-weight:bold;
+		}
+		.elements {
+			max-height:80vh;
+			overflow-y:scroll;
+			position:fixed;
+			top:0;
+			left:0;
+			padding:30px;
+			margin:30px;
+			background:rgba(255,255,255,0.5);
+			border:1px solid #DDD;
+			width:50vw;
+			display: none;
+			opacity: 0;
+			-webkit-transition: opacity .15s ease-in-out;
+			-moz-transition: opacity .15s ease-in-out;
+			-ms-transition: opacity .15s ease-in-out;
+			-o-transition: opacity .15s ease-in-out;
+			transition: opacity .15s ease-in-out;
+		}
+		
+		.elements-second {
+			max-height:80vh;
+			position:fixed;
+			top:0;
+			left:0;
+			margin:30px;
+			width:50vw;
+			opacity: 1;
+			display: block;
+			-webkit-transition: opacity .15s ease-in-out;
+			-moz-transition: opacity .15s ease-in-out;
+			-ms-transition: opacity .15s ease-in-out;
+			-o-transition: opacity .15s ease-in-out;
+			transition: opacity .15s ease-in-out;
+		}
+		
+		.elements-problem {
+			padding:20px;
+			position:fixed;
+			overflow-y:scroll;
+			top:0;
+			left:0;
+			width:100%;
+			height:100vh;
+			background:#FFF;
+			display:none;
+			z-index:1000;
+			box-sizing:border-box;
+		}
+		
+		h1 {
+			color:#000;
+			margin-top:0px;
+			border-left:6px solid #96172C;
+			padding-left:12px;
+		}
+		.elements img {
+			width:100%;
+		}
+		
+		.elements-problem button, .elements button {
+			background:#96172C;
+			color:#FFF;
+			padding:8px 24px;
+			border:0px;
+			text-transform:uppercase;
+			cursor:pointer;
+		}
+		
+		.buttons {
+			position:fixed;
+			bottom:0;
+			right:0;
+			padding:30px;
+			margin:30px;
+		}
+		
+		.buttons button {
+			background:#96172C;
+			color:#FFF;
+			padding:8px 24px;
+			border:0px;
+			text-transform:uppercase;
+		}
+		.elements-problem button.up, .elements button.up {
+			position:absolute;
+			background:#FFF;
+			color:#96172C;
+			top:0px;
+			right:0px;
+			font-size:24px;
+			padding:12px 12px;
+			cursor:pointer;
+		}
+		
+		.video > iframe, .video > object{
+			width:100%;
+			min-height:40vh;
+		}
+		
+		.content .button_link {
+			padding:12px;
+			display:block;
+			text-decoration:none;
+			color:#000;
+		}
+		.content .button_link:hover {
+			cursor:pointer;
+			background:#96172C;
+			color:#FFF;
+		}
+		
+		.content h3 {
+			margin20px 0px;
+			margin-bottom:20px;
+			border-bottom:2px solid #96172C;
+		}
+		
+		.content h4 {
+			margin:0px;
+		}
+		
+		.content p {
+			margin:0px;
+		}
+		.content .problem {
+			padding:12px;
+		}
+		.content .problem:hover {
+			cursor:pointer;
+			background:#96172C;
+			color:#FFF;
+		}
+		
+		@media (max-width: 960px) { 
+			.elements {
+				max-height: 100vh;
+				width:100vw;
+				height:100vh;
+				margin:0px;
+				z-index:999;
+				box-sizing:border-box;
+				background:rgba(255,255,255,1);
+			}
+			
+			.buttons {
+				z-index:1;
+				margin:0px;
+				width:100%;
+				box-sizing:border-box;
+				text-align:right;
+			}
+			
+			.buttons button {
+				display:block;
+				width:50vw;
+				margin-bottom:6px;
+				float: right;
+			}
+			
+			.elements-second  {
+				width:100%;
+				margin:0px;
+				z-index:999;
+				box-sizing:border-box;
+				
+			}
+			
+			.elements-second input {
+				font-size:22px;
+			}
+		}
+	</style>
+	
+</head>
+<body>
+	
+	<div class="mapwraper">
+		<div class="">
+			
+		</div>
+		
+		<object data="Design.svg" id="svgmap"></object>
+
+		<div class="elements">
+			<button class="close up">X</button>
+			<h1 id="district"></h1>
+			<div class="content"></div>
+			<div style="clear:both;padding:10px;"></div>
+			<button class="close">Закрыть</button>
+		</div>
+		
+		<div class="elements-problem">
+			<button class="close up">X</button>
+			<div class="content"></div>
+			<div style="clear:both;padding:10px;"></div>
+			<button class="close">Закрыть</button>
+		</div>
+		
+		<div class="elements-second">
+			<input class="" id="tags" placeholder="Поиск по районам">
+		</div>
+		
+		<div class="buttons">
+			<button class="zoom-out">+</button>
+			<button class="zoom-in">-</button>
+			<button class="reset">Сбросить</button>
+		</div>
+	</div>
+</body>

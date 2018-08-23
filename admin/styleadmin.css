@@ -1,0 +1,15 @@
+body {
+	touch-action: auto;
+	margin:0px;
+	padding:0px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.district {
+	width: 100%;
+}
+
+.uk-description-list span {
+	padding-bottom:24px;
+	display:block;
+}

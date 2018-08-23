@@ -1,0 +1,282 @@
+.menu {
+	width:100%;
+	background-color:#FFE57F;
+	z-index:999;
+}
+
+.menu .uk-navbar-nav>li a {
+	color: rgb(80, 121, 196);
+	font-weight: 700;
+	height:60px;
+}
+
+.menu .uk-navbar-nav>li a:hover {
+	color:#FFF;
+}
+.menu .uk-navbar-item {
+	height:60px;
+}
+
+.menu__logo {
+	height:60px;
+	width:100%;
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.menu .menu__logo {
+	height:60px;
+	width:250px;
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.blue_block {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c99e3+0,2abce3+100 */
+	background: #2c99e3; /* Old browsers */
+	background: -moz-linear-gradient(top, #2c99e3 0%, #2abce3 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #2c99e3 0%,#2abce3 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #2c99e3 0%,#2abce3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c99e3', endColorstr='#2abce3',GradientType=0 ); /* IE6-9 */
+	min-height:100vh;
+	padding-bottom:24px;
+}
+
+.mac__img__wrapper {
+	padding-top:80px;
+}
+
+.mac__img {
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+	height:42vh;
+}
+
+.mac__img_mobile {
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+	height:20vh;
+}
+
+
+.main__text h1 {
+	color:#FFF;
+	font-weight: 700;
+}
+
+.ul-extra li{
+	color:rgb(232, 240, 254);
+	line-height:43px;
+	font-size: 20px;
+}
+.ul-extra.w li {
+	color:rgb(98, 98, 98);
+}
+
+.ul-extra {
+	padding-top:30px;
+}
+
+.slide {
+	text-align:center;
+}
+
+.slide span {
+	font-size: 20px;
+	line-height:58px;
+}
+
+.slide span {
+    font-size: 14px;
+    line-height: 48px;
+}
+
+a.btn-special {
+	color:#FFF;
+	line-height:50px;
+	border-radius:5px;
+	padding:6px 20px;
+	border:1px solid #FFF;
+	text-decoration:none;
+}
+
+a.btn-special.x2 {
+	padding:12px 40px;
+	border-width:2px;
+	border-radius:10px;
+}
+
+a.btn-special:hover {
+	text-decoration:none;
+	background:#FFF;
+	color:#2C9AE3;
+	border-color:#2C9AE3;
+}
+
+.specialist__block {
+	padding-top:50px;
+	
+}
+
+.specialist__block .uk-slideshow-items span {
+	color: rgb(98, 98, 98);
+    font-size: 20px;
+}
+
+.clients__block {
+	padding-top:70px;
+	background-color:#F6F6F6;
+	padding-bottom:70px;
+}
+
+.clients__block h1 {
+	margin:0px;
+}
+.clients__block h3 {
+	color:rgb(127, 127, 127);
+	margin-top:5px;
+}
+
+.sertificat {
+	padding-top:40px;
+}
+
+.imgt {
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+
+.call {
+	background-color: rgb(251, 139, 0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-color: rgb(201, 111, 0);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 14px;
+	line-height:22px;
+    color: rgb(255, 255, 255);
+	width:100%;
+}
+
+.phone-btn {
+	background-color: rgb(44, 153, 227);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-color: rgb(25, 124, 191);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.exelsaga {
+	padding-top:24px;
+	padding-bottom:48px;
+}
+.exelsaga input {
+	height: 34px;
+    padding: 6px 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.redhref {
+	color: rgb(230, 25, 25);
+	line-height:46px;
+	font-size:18px;
+	
+}
+
+.excelsaga2 {
+	padding-top:24px;
+	padding-bottom:24px;
+}
+
+.excelsaga2 p {
+	margin-top:5px;
+}
+
+
+.footer_block {
+	background-color:#FFE57F;
+	min-height:100px;
+}
+
+.footer_block .cash img {
+	width:50px;
+	margin:10px 10px;
+}
+
+.footer_block .buttons button{
+	margin:5px;
+	background-color:#FFF;
+}
+
+.footer_block .info {
+	font-size:15px;
+}
+
+.footer_block .soc img {
+	width: 40px;
+}
+
+.smallpart img {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray; /* IE 6-9 */
+}
+
+.smallpart img:hover {
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: grayscale(0%);
+	filter: gray; /* IE 6-9 */
+}
+
+.error {
+	font-size:12px;
+	color:#FF0000;
+	background-color:#FFF;
+	border-radius:5px;
+	padding:5px;
+}
+
+.main__text > h2 {
+	color:#FFF;
+	margin-top:10px;
+}

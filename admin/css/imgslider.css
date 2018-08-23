@@ -1,0 +1,25 @@
+.ba {
+	width:100%;
+	position:relative;
+}
+.ba > img {
+	width:100%;
+}
+.ba .after {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100px;
+	overflow:hidden;
+}
+.ba .after img {
+	display:block;
+	max-width: none;
+}
+.ba .hover {
+	position:absolute;
+	height:100%;
+	width:3px;
+	background-color:#DDD;
+	top:0;
+}
