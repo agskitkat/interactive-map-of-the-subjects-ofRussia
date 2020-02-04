@@ -1,7 +1,7 @@
 # Interactive map of the subjects of Russia
 Интерактивная карта субъектов РФ с Крымом - веб-приложение. 
 
-![alt text](http://barbearshop.ru/images/Screenshot_2.png)
+![Интерактивная карта России](http://barbearshop.ru/images/Screenshot_2.png)
 
 Возможности:
  - Маштабирование и перемещение карты
